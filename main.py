@@ -76,7 +76,6 @@ def delete_phone(conn, phone_id):
 def delete_client(conn, client_id):
     """Функция, позволяющая удалить существующего клиента"""
     cur = conn.cursor()
-    cur = conn.cursor()
     # Удаление всех телефонов, связанных с клиентом
     cur.execute("DELETE FROM phones WHERE client_id = %s;", (client_id,))
     # Удаление клиента
