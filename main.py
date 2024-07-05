@@ -1,6 +1,4 @@
 import psycopg2
-#Функция, создающая структуру БД (таблицы).
-import psycopg2
 
 
 def create_db(conn):
